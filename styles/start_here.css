@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.wrapper {
+  max-width: 1200px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/***** BOTTOM NAVBAR STYLING *****/
+/* #bottom_wrapper{
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+} */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* a {
+  text-decoration: none;
+  color: #222;
+} */
+
+body{
+  background: #fafafa;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #fff;
+  background-color: transparent;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.button span {
+  display: none;
+}
+
+
+
+
+
+
+
+/************** BANNER IMAGE STYLING ***************/
+/* .banner{
+    max-width: 100%;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+    margin-bottom: 2.4rem;
+}
+.banner img{
+    max-width: 100%;
+    height: 320px;/
+    position: relative;
+    background-size: cover;
+} */
+.banner-text {
+    max-width: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 60px 75px;
+}
+.banner-text h3{
+    font-size: 1.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: rgb(78, 73, 73);
+    line-height: 30px;
+    padding: 0 0 20px 0;
+}
+.banner-text p{
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: rgb(87, 71, 71);
+    line-height: 23px;
+    padding: 0 0 20px 0;
+    word-wrap: break-word;
+}
+.banner-text a{
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+
+
+/******* CAROUSEL STYLING ********/
+.carousel-wrapper{
+  padding-bottom: 15px;
+}
+.carousel-inner .carousel-item{
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target]{
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px; /* change width */
+  height: 10px; /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .7;
+  transition: opacity .6s ease;
+  border-radius: 100%;  /* add border-radius */
+}
+
+.caption {
+  position: absolute;
+  right: 15%;
+  bottom: 2rem;
+  left: 12%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  line-height: 25px;
+}
+
+.caption h1{
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  font-weight: 700;
+  font-size: 2.3rem;
+  font-family: 'open sans', sans-serif;
+}
+.caption .para p{
+  position: absolute;
+  top: -12rem;
+  left: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'open sans',sans-serif;
+}
+
+.caption a{
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+
+
+
+/******** CARD SECTION 1 ********/
+
+.icon-section{
+  width: 100%;
+  margin-top: 30px;
+}
+.icon-section .icon-card {
+  width: 100%;
+}
+.icon-section .icon-card i{
+  font-size: 4.5rem;
+  color: rgb(47, 182, 47);
+}
+.title-text{
+  padding: 30px;
+}
+.title-text h3{
+  font-size: 18px;
+  line-height: 1.364;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.carded:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+
+
+
+
+.icon-card{
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+.inside-card{
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.card-sec1 h3{
+  font-size: 1.7rem;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 18px 0;
+  color: rgb(66, 204, 66);
+}
+.card-sec1 p{
+  font-size: 0.9rem;
+  font-family: "Open sans", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+
+
+
+/******** PRODUCT CARD STYLING ********/
+.splide{
+  padding: 0;
+}
+.splide__slide {
+  border-radius: 4px;
+  margin: 0 -50px;
+}
+.splide__pagination__page {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 3px;
+  padding: 0;
+  transition: all .2s linear;
+  border: none;
+}
+.splide__arrow svg {
+  width: 1.4em;
+  height: 1.3em;
+  fill: #4b5454;
+  transition: fill .2s linear;
+}
+.splide__pagination {
+  position: absolute;
+  z-index: 1;
+  bottom: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
+.card-size{
+  width: 250px;
+  height: 250px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.text-dark{
+  font-family: "Roboto",sans-serif;
+  font-size: 15px; 
+}
+.card-size:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+
+
+
+/************ CARD SECTION 2 STYLING ***********/
+.title-card-section2{
+  margin-bottom: 1.5rem;
+}
+.title-card-section2 .title-section2 h3{
+  font-size: 1.5rem;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+.card-section2{
+  margin-bottom: 1.5rem;
+}
+.card .card-title{
+  line-height: 20px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins',sans-serif;
+}
+.card .card-text{
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  padding-bottom: 20px;
+}
+.card .card-link{
+  font-size: 0.9rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+.card .card-link span .fa-angle-right{
+  transition: all 0.3s;
+}
+.card .card-link:hover span .fa-angle-right{
+  padding: 0 1rem;
+  transition: all 0.3s;
+}
+
+
+
+/***************** CARD SECTION 3 ****************/
+.card-section3{
+  margin-bottom: 1.5rem;
+}
+
+
+
+/***************** CARD SECTION 4 ****************/
+.card-heading{
+  padding: 1.2rem 0rem 0.9rem 1.3rem;
+}
+.card-heading h3{
+  font-size: 1.2rem;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+.active-card{
+  border: 1px solid rgb(45, 241, 45);
+  color: rgb(20, 102, 20)
+}
+.card-body-inner .card-link:hover .cards{
+  border: 1px solid rgb(45, 241, 45);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* MEDIA QUERIES STYLING *************/
+@media only screen and (min-width:992px) and (max-width: 1200px){
+  .banner-text{
+    width: 75%;
+    padding: 50px 30px;
+  }
+  /* .inside-card{
+    margin-top: -2em;
+  } */
+  .splide__slide {
+    border-radius: 4px;
+    margin: 0 -30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .carousel-inner{
+    overflow: visible;
+  }
+  .banner-text{
+    padding: 10px;
+    margin: 0;
+    /* background: #000; */
+    color: white;
+    max-width: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+  }
+
+  .banner-text h3{
+    color: black;
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  .banner-text p{
+    color: black;
+    font-size: 0.9em;
+  }
+  .card-sec1 h3{
+    font-size: 1.3em;
+  }
+  .card-sec1 p{
+    font-size: 0.8em;
+  }
+  .card-size{
+    width: 190px;
+    height: 190px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .inside-card{
+    margin-top: 12em;
+  }
+  .splide__slide {
+    border-radius: 4px;
+    margin: 0px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px){
+  .carousel-inner{
+    overflow: visible;
+  }
+  .banner-text{
+    padding: 10px 0 0 20px;
+    position: relative;
+    /* background: #000; */
+    max-width: 100%;
+    /* height: 25vh; */
+    border: 1px solid #ccc;
+  }
+  .banner-text h3{
+    padding: 0;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+  }
+  .banner-text p{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+  }
+  .splide__arrow svg {
+    width: 1.5em;
+    height:1.5em;
+    fill: #687777;
+    transition: fill .2s linear;
+  }
+  .card-sec1 h3{
+    font-size: 1.3em;
+  }
+  .card-sec1 p{
+    font-size: 0.8em;
+  }
+  .card-size{
+    width: 170px;
+    height: 170px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .inside-card{
+    margin-top: 7em;
+  }
+  .splide__slide {
+    border-radius: 4px;
+    margin: 0px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 599px){
+  .carousel-inner{
+    overflow: visible;
+  }
+  .banner-text{
+    padding: 10px 0 0 20px;
+    position: relative;
+    /* background: #000; */
+    max-width: 100%;
+    /* height: 25vh; */
+    border: 1px solid #ccc;
+  }
+  .banner-text h3{
+    font-size: 0.9em;
+    padding: 0;
+  }
+  .banner-text p{
+    font-size: 0.8em;
+  }
+  .inside-card{
+    margin-top: 5em;
+  }
+  .splide__arrow svg {
+    width: 1em;
+    height:1em;
+    fill: #687777;
+    transition: fill .2s linear;
+  }
+  .card-sec1 h3{
+    font-size: 1.3em;
+  }
+  .card-sec1 p{
+    font-size: 0.8em;
+  }
+  .card-sec1 h3{
+    line-height: 1.5em;
+  }
+  .card-size{
+    width: 135px;
+    height: 135px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .splide__slide {
+    border-radius: 4px;
+    margin: 0px;
+  }
+  .card-heading h3{
+    font-size: 1em;
+  }
+  .title{
+    font-size: 0.9em;
+  }
+
+  .title-icon{
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    .button span {
+      display: initial;
+    }
+  }
+  
+  .button--icon {
+    min-width: initial;
+    padding: 0.5rem;
+  }

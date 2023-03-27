@@ -1,0 +1,48 @@
+[17-Dec-2021 04:31:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 99
+[17-Dec-2021 04:39:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 99
+[17-Dec-2021 04:43:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 99
+[17-Dec-2021 04:59:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[17-Dec-2021 04:59:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[21-Dec-2021 04:18:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[30-Dec-2021 04:57:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[30-Dec-2021 05:00:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[30-Dec-2021 06:13:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[05-Feb-2022 10:18:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[05-Feb-2022 10:18:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106
+[05-Feb-2022 10:19:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php:106
+Stack trace:
+#0 {main}
+  thrown in /home/m201015r/public_html/indiabiriyani.com/demo/razorpay/submit1.php on line 106

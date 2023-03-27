@@ -1,0 +1,82 @@
+.form-control{
+    border: 2px solid #f3f3f3 !important;
+    box-shadow: none !important;
+}
+.form-control:focus{
+    border: 2px solid rgb(0, 81, 255) !important;
+    box-shadow: none !important;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    background-color: #f3f1f1;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.link-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    text-align: center;
+}
+
+.footer-img{
+    padding: 20px 0;
+    min-width: 200px;
+}
+
+.bottom-footer{
+    width: 100%;
+    position: absolute;
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 10px 0;
+}
+ 
+
+@media only screen and (min-width: 300px) and (max-width: 460px) {
+    .footer-content{
+        display: block;
+        text-align: center;
+    }
+}

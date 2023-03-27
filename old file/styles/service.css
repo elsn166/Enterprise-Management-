@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.wrapper {
+  max-width: 1300px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 560px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+
+/***** BOTTOM NAVBAR STYLING *****/
+/* #bottom_wrapper{
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+} */
+
+
+/* @media only screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1200px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
+
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* a {
+  text-decoration: none;
+  color: #222;
+} */
+
+body{
+  background: #fafafa;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #fff;
+  background-color: transparent;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.button span {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/******* CAROUSEL STYLING ********/
+.carousel-inner .carousel-item img{
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
+}
+
+.carousel-indicators [data-bs-target]{
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px; /* change width */
+  height: 10px; /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .7;
+  transition: opacity .6s ease;
+  border-radius: 100%;  /* add border-radius */
+}
+
+.caption {
+  position: absolute;
+  right: 15%;
+  bottom: 2rem;
+  left: 12%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: rgb(19, 19, 19);
+  /* text-align: center; */
+  line-height: 25px;
+}
+
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  .caption{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+  }
+  .caption .h1{
+    font-size: 18px;
+  }
+  .caption .para .p{
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .caption .learn-more-btn{
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .carousel-inner .carousel-item{
+    margin-bottom: 3rem;
+  }
+  .caption{
+    color: black;
+    top: 31em;
+    left: 1rem;
+  }
+  .caption .h1{
+    font-size: 18px;
+    top: -14em;
+  }
+  .caption .para .p{
+    font-size: 13px;
+    line-height: 18px;
+    top: -17em;
+  }
+  .caption .learn-more-btn{
+    font-size: 12px;
+    margin-top: 1em;
+    top: -9em;
+  }
+  .carousel-indicators [data-bs-target]{
+    display: none;
+  }
+  #mob-top{
+    margin-top: 0em !important;
+  }
+}
+
+
+
+
+
+/*************** CUSTOM SERVICE CARDS ***************/
+.custom_card{
+  margin-bottom: 1.2rem;
+  max-width: 100%;
+  min-height: auto;
+  background: #fff;
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom_card:hover{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.custom_card_content{
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.custom_card_content img{
+  width: 90px;
+  height: 90px;
+}
+
+
+
+
+
+
+
+/* @media only screen and (max-width:768px) {
+  .caption{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+  }
+  .caption .h1{
+    font-size: 18px;
+  }
+  .caption .para .p{
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .caption .learn-more-btn{
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 560px) {
+  .caption{
+    top: 19.5em;
+  }
+  .carousel-indicators [data-bs-target]{
+    display: none;
+  }
+} */
+
+
+
+.caption h1{
+    position: absolute;
+    top: -12rem;
+    left: 37%;
+    font-weight: 700;
+    font-size: 3.4rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.caption .para p{
+  position: absolute;
+  top: -12rem;
+  left: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'open sans',sans-serif;
+}
+
+.caption a{
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+/*********** CARDS SECTION STYLING ************/
+.card-section1-title{
+  padding: 30px 8px;
+}
+.card-section1-title h3{
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(46, 157, 46);
+}
+
+
+.service_font{
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 20px;
+}
+
+
+
+
+
+
+.card{
+  border: none !important;
+  transition: all 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card .card-body #card-title{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.card .card-body #card-text{
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.card .card-body #card-link{
+  text-decoration: none;
+  color: blue;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  padding-top: 20px;
+}
+/* .card .card-body #card-link:hover{
+  border-bottom: 2px solid blue;
+} */
+.card .card-body #card-link .fa-angle-right{
+  font-size: 1rem;
+  position: relative;
+  top: .1rem;
+  padding: 0px 0.4rem;
+  transition: 0.3s;
+}
+.card .card-body #card-link:hover .fa-angle-right{
+  font-size: 1rem;
+  position: relative;
+  top: .1rem;
+  padding: 0px 0.8rem;
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .card-section1-title{
+    margin-top: -2em;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .card-section1-title h3{
+      margin-top: 3em;
+    font-size: 1em;
+  } 
+}
+
+
+
+
+
+
+
+/***************** CARD SECTION 3 STYLING ***************/
+.card-section2-title{
+    padding: 40px 8px;
+}
+.card-section2-title h3{
+    font-size: 2em;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    color: rgb(46, 199, 46);
+    line-height: 30px;
+}
+
+
+@media only screen and (max-width: 560px) {
+  .card-section2-title h3{
+    font-size: 1em;
+  } 
+}
+
+
+
+/* Tablet Styles  */
+@media only screen and (min-width: 480px) {
+  #sec-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  #sec-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  #sec-column {
+    flex: 33.3%;
+    max-width: 33.3%;
+  }
+}
+
+
+
+
+@media (min-width: 600px) {
+    .button span {
+      display: initial;
+    }
+  }
+  
+  .button--icon {
+    min-width: initial;
+    padding: 0.5rem;
+  }
+  

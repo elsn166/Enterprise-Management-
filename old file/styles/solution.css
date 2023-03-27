@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* .wrapper {
+  max-width: 1300px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 560px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/***** BOTTOM NAVBAR STYLING *****/
+/* #bottom_wrapper{
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+} */
+
+
+/* @media only screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1200px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
+
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* a {
+  text-decoration: none;
+  color: #222;
+} */
+
+body{
+  background: #fafafa;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #fff;
+  background-color: transparent;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.button span {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/******* CAROUSEL STYLING ********/
+.carousel-inner .carousel-item img{
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
+}
+
+.carousel-indicators [data-bs-target]{
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px; /* change width */
+  height: 10px; /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .7;
+  transition: opacity .6s ease;
+  border-radius: 100%;  /* add border-radius */
+}
+
+.caption {
+  position: absolute;
+  right: 15%;
+  bottom: 2rem;
+  left: 12%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  line-height: 25px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+  .caption{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+  }
+  .caption .h1{
+    font-size: 18px;
+  }
+  .caption .para .p{
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .caption .learn-more-btn{
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 560px) {
+  .caption{
+    top: 19.5em;
+  }
+  .carousel-indicators [data-bs-target]{
+    display: none;
+  }
+}
+
+
+
+
+.caption h1{
+    position: absolute;
+    top: -12rem;
+    left: 35%;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.caption .para p{
+  position: absolute;
+  top: -12rem;
+  left: 0;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'open sans',sans-serif;
+}
+
+.caption a{
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+/************* BIG CARD SECTION 1 *************/
+.card-body-title{
+  font-size: 1.3em;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 600;
+}
+.card-link a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Roboto',sans-serif;
+}
+
+
+
+
+
+/************ CARD SECTION 2 *************/
+.media-query-card{
+  margin-top: 1.5em;
+}
+.card_title{
+ font-size: 1.8rem;
+ font-family: "Open sans",sans-serif;
+ font-weight: 600;
+ color: rgb(18, 150, 18);
+ padding-bottom: 1rem;
+}
+.card_text{
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 25px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .media-query-card{
+    margin-top: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+/************** CARD SECTION 3 **************/
+.card-section3-title{
+  padding: 1rem 0 1.5rem 0.5rem;
+}
+.card-section3-title h3{
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: "Open sans", sans-serif;
+  color: rgb(42, 197, 42);
+}
+.card-section3-text{
+  padding: 0rem 0 1.5rem 0.6rem;
+}
+.card-section3-text p{
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 23px;
+}
+.card-heading{
+  padding-bottom: 10px;
+}
+.card-heading h3{
+  font-size: 1em;
+  font-family: "Open sans", sans-serif;
+  font-weight: 800;
+}
+.card-heading-text{
+  padding-bottom: 5px;
+}
+.card-heading-text p{
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 18px;
+}
+
+
+
+
+
+
+/************ CARD SECTION 6 STYLING ************/
+.card-section6-heading{
+  padding: 10px;
+} 
+.card-section6-heading h3{
+  font-size: 1.7em;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+  color: rgb(42, 197, 42);
+}
+.card-section6-text{
+  padding: 10px;
+}
+.card-section6-text p{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+  .button span {
+    display: initial;
+  }
+}
+
+.button--icon {
+  min-width: initial;
+  padding: 0.5rem;
+}

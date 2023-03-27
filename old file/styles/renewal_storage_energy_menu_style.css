@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.wrapper {
+  max-width: 1300px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 560px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** BOTTOM NAVBAR STYLING *****/
+/* #bottom_wrapper{
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+} */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* a {
+  text-decoration: none;
+  color: #222;
+} */
+
+body{
+  background: #fafafa;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #fff;
+  background-color: transparent;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.button span {
+  display: none;
+}
+
+
+/********* MAIN CONTENT TOP NAV ***********/
+.top-nav{
+  display: flex;
+}
+.top-row ul{
+  padding: 2px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  height: 5.9rem;
+  background: rgb(236, 232, 232);
+  border-right: none;
+  margin-bottom: 1rem;
+}
+.top-row li:first-child{
+  border-left: 1px solid rgb(180, 62, 117);
+}
+.top-row li{
+  transition: all 0.3s ease-in-out;
+  transform: translate(-10%);
+  cursor: pointer;
+  border-right: 1px solid rgb(241, 97, 97);
+  overflow: hidden;
+  line-height: 14px;
+  padding: 10px;
+}
+.icons-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  color: #3dcd58;
+}
+.icons-sec .material-icons{
+  margin-left: 5px;
+  font-size: 2rem;
+  vertical-align: middle;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.title-sec{
+  max-height: 1.5rem;
+  padding: 0 10px;
+  margin: 10px;
+  color: #333;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.top-row ul li a{
+  text-decoration: none;
+}
+.top-row ul li:hover{
+  background: #fff;
+}
+.top-row ul li:hover .material-icons,
+.top-row ul li:hover .title-sec{
+  color: orange;
+}
+
+
+
+
+
+/******************* MOBILE CARD STYLING ******************/
+.mobile-card-view{
+  margin: 20px 0;
+}
+.mobile-card-view ul{
+  display: block;
+}
+.mobile-card-view ul li{
+  padding: 10px 0;
+  /* background: #f3f3f3; */
+  margin: 5px 0;
+  border-radius: 10px;
+  transition: 0.1s ease-in-out;
+}
+.mobile-card-view ul li a{
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.mobile-card-view ul li a span {
+  line-height: 25px;
+}
+.mobile-card-view ul li a span .material-icons{
+  position: relative;
+  top: 5px;
+}
+.mobile-card-view ul li a .fa-angle-right{
+  position: relative;
+  right: 25px;
+}
+.mobile-card-view ul li:hover{
+  background: #f3f3f3;
+}
+.list-active{
+  background: #f3f3f3;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 1045px) {
+  .top-row{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1046px) and (max-width: 1400px) {
+  #mobile-card-view{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+/********* CARDS STYLING *********/
+.actv{
+  background: #fff;
+  color: orange;
+}
+.actv .material-icons,
+.actv .title-sec{
+  color: orange;
+}
+
+
+/********* NEW LINK TITLE STYLING *********/
+.pagelink-wrapper{
+  max-width: 100%;
+  height: 2rem;
+  padding: 10px 5px;
+  /* background: #ccc; */
+}
+.pagelink-wrapper a{
+  text-decoration: none;
+  color: #0da6ff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+.pagelink-wrapper .fa-angle-right{
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+.pagelink-wrapper a:hover .fa-angle-right{
+  position: relative;
+  padding: 0 0.8rem;
+}
+
+
+/********** PRODUCT CONTENT GRID ***********/
+.product-grid{
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  align-content: flex-start;
+}
+.product-grid-column-1{
+  position: relative;
+  /* width: 25%; */
+  padding: 10px 10px 0;
+}
+.product-category-column{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgb(255, 255, 255);
+  border: 1px solid #eee;
+}
+.product-category-column ul{
+  margin: 0;
+  padding: 10px 0;
+  background: #fff;
+}
+.product-category-column ul li{
+  list-style: none;
+  padding: 0.1px 0;
+}
+.product-category-column ul li:hover ,
+.product-category-column ul li:hover a{
+  color: #00D100;
+  background: #f5f5f5;
+}
+.product-category-column ul li a{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px 5px 15px;
+  margin: 10px 0;
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+  color: black;
+  text-decoration: none;
+}
+/* .product-category-column ul li a span{
+  padding: 20px;
+} */
+.product-category-column ul li a span i{
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+
+
+
+/********** PRODUCTS GRID STYLING **********/
+.products-grid{
+  margin-top: 3px;
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+.products-grid ul{
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+.products-grid ul li{
+  width: 33.33333333%;
+  padding: 8px;
+}
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: .25rem;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-text,
+.card-title{
+  padding: 7px 0;
+  font-size: 0.8rem;
+  font-family: 'open Sans', sans-serif;
+  font-weight: 500;
+}
+
+
+
+/************** FOR BOOTSTRAP STYLING STARTS **************/
+@media (min-width: 769px) and (max-width: 992px) {
+  .col-lg-4{
+    flex: 0 0 auto;
+    width: 33%;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .col-md-6{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+/************** FOR BOOTSTRAP STYLING ENDS **************/
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+  #desktop-product-grid{
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .mobile-product-view{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    .button span {
+      display: initial;
+    }
+  }
+  
+  .button--icon {
+    min-width: initial;
+    padding: 0.5rem;
+  }
